@@ -1,0 +1,51 @@
+@import "./variables";
+@import "./mixins";
+
+p {
+    color: $textColor;
+    padding: 2rem;
+    background-color: $background;
+}
+
+
+
+// nested code
+.header {
+    padding: 2rem;
+    background-color: black;
+
+    //header-inner
+    &-inner {
+        color: white;
+        // Nếu không truyền gì vào mà ở trên có tham số thì chương trình sẽ báo lỗi vậy nên ở trên chúng ta sẽ cho nó
+        // có 1 giá trị mặc định nếu không truyền gì vào nó sẽ là màu đó
+        @include bgc(white);
+
+        //header-inner-text
+        &-text {
+            color: blue;
+
+            &:hover {
+                color: orange;
+            }
+        }
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    &-inner-text:hover {
+        color: purple;
+    }
+    @include minWidth(1024px){
+        display: none;
+    }
+
+}
+
+.box {
+    @include bgc(red);
+    @include size(100px);
+    @include absoluteCenter("both");
+}

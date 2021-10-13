@@ -1,0 +1,43 @@
+// mixin giống kiểu đoạn code đấy mà chúng ta có thể sử dụng đi sử dụng lại để thực hiện 1 chức năng nào đó 
+// @mixin nameMixin(){}: cú pháp
+// @include nameMixin(): sử dụng
+@mixin bgc($bgcolor: red) {
+    background-color: $bgcolor;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin absoluteCenter($direction: "left") {
+    position: absolute;
+
+    @if $direction=="left" {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if $direction=="top" {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    @if $direction=="both" {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin maxWidth($value){
+    @media screen and (max-width: $value){
+        @content;
+        // trả về nội dung ở đây thì dùng content
+    }
+   
+}
+@mixin minWidth($value){
+    @media screen and (min-width: $value){
+        @content;
+    }
+   
+}

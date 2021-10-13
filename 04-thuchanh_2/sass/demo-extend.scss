@@ -1,0 +1,21 @@
+.register {
+    color: #fff;
+    background-color: orange;
+    font-size: 1.1rem;  
+    border: none;
+}
+.boder {
+    border: 2px solid darkgoldenrod;
+}
+.content {
+    @extend .register;
+    // thằng content sẽ mang thuộc tính của register đồng thời mang theo thuộc tính riêng của nó nữa
+    @extend .boder;
+    max-width: 500px;
+    font-weight: bold;
+    padding: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+    color: #333;
+
+}

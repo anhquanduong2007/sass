@@ -1,0 +1,10 @@
+## SASS
+- Là 1 CSS preprocessor
+    + Viết mã CSS nhanh và chuyên nghiệp
+    + Tiết kiệm thời gian và đỡ nhàm chán
+    + Dễ bảo trì, phát triển
+    + Sử dụng lại và kết hợp dễ dàng với các mã CSS
+    + Phù hợp với dự án lớn
+    + SASS, LESS, ...
+- Cộng đồng sử dụng đông đảo
+- Phân loại cách viết SASS và SCSS (2 cái là khác nhau nhé đừng tưởng là 1)

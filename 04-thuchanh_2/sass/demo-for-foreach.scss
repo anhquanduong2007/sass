@@ -1,0 +1,38 @@
+$sizes: 40px,
+50px,
+80px;
+
+@each $size in $sizes {
+    .slider-item-size-#{$size} {
+        font-size: $size;
+    }
+}
+
+// With Maps
+$icons: ("eye": #333, "start": red, "stop": blue);
+
+@each $name,
+$color in $icons {
+    .icon-#{$name} {
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: $color;
+    }
+}
+
+// Destructuring
+$icons_2: "eye_2"#333 50px,
+"start_2"red 40px,
+"stop_2"blue 30px;
+
+@each $name,
+$color,
+$size in $icons_2 {
+    .icon-#{$name} {
+        display: inline-block;
+        width: $size;
+        height: $size;
+        background-color: $color;
+    }
+}

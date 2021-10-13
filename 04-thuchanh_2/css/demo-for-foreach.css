@@ -1,0 +1,55 @@
+.slider-item-size-40px {
+  font-size: 40px;
+}
+
+.slider-item-size-50px {
+  font-size: 50px;
+}
+
+.slider-item-size-80px {
+  font-size: 80px;
+}
+
+.icon-eye {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+}
+
+.icon-start {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+}
+
+.icon-stop {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+.icon-eye_2 {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+}
+
+.icon-start_2 {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: red;
+}
+
+.icon-stop_2 {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: blue;
+}
+
+/*# sourceMappingURL=demo-for-foreach.css.map */

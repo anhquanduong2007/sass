@@ -1,0 +1,15 @@
+Để combine 1 file sass -> css dùng lệnh "sass (tên file sass):(tên file css)";
+Để theo dõi sự thay đổi của 1 file dùng lệnh "sass -w (tên file sass):(tên file css)";
+Có thể combine theo thư mục ví dụ như ở đây là "sass sass_1:css_1";
+Đồng thời có thể theo dõi theo thư mục "sass -w sass_1:css_1"
+
+//===============================//
+có 4 loại output css
+compact: 1 dòng (cái này thuộc ruby sass)
+compressed: nén
+trên cùng 1 dòng
+expanded: format
+nested (cái này thuộc ruby sass)
+ví dụ về cách thay đổi
+"sass --style=compressed style.scss:style.css"
+"sass --style=expanded style.scss:style.css"
